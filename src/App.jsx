@@ -15,15 +15,15 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+          <Route
+            path="login"
+            element={<LoginPage setIsLogin={setIsLogin} />} />
         <Route element={<Layout />}>
 
         <Route
           path=""
           element={isLogin ? <HomePage /> : <Navigate to="/login" />}
           ></Route>
-        <Route
-          path="login"
-          element={<LoginPage setIsLogin={setIsLogin} />} />
           <Route
               path="category/:categoryId/product"
               element={<ProductsPage />}

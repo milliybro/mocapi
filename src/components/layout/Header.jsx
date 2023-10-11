@@ -4,7 +4,7 @@ const Header = () => {
     <header className="container">
       <ul className="nav">
          <div>
-            <img src={logo} alt="" />
+            <img height={60} src={logo} alt="" />
          </div>
         <li className="nav-item">
           <a className="nav-link active" aria-current="page" href="#">
