@@ -1,6 +1,7 @@
-.product-item{
+.products-row{
    display: grid;
-   grid-template-columns: 45% 45%;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 20px;
 }
 .product-card{
    width: 100%;

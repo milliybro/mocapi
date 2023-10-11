@@ -144,13 +144,11 @@ const ProductPage = () => {
         </p>
         <div className="products-row">
           {sortedProducts.map((product) => (
-            <div className="mb-3 product-item" key={product.id}>
-            <ProductCard className="product-card"
+            <ProductCard key={product.id}
               {...product}
               editProduct={editProduct}
               deleteCategory={deleteCategory}
             />
-          </div>
           ))}
         </div>
         <Modal show={show} onHide={closeModal} backdrop="static" keyboard={false}>
