@@ -11,6 +11,8 @@ import productSchema from "../schema/ProductSchema";
 import request from "../server";
 import useFetchPagination from "../hook/useFetch";
 
+import "./Product.scss"
+
 
 const ProductPage = () => {
   let { categoryId } = useParams();
@@ -142,13 +144,13 @@ const ProductPage = () => {
         </p>
         <div className="products-row">
           {sortedProducts.map((product) => (
-            <Col className="mb-3" key={product.id}>
-            <ProductCard
+            <div className="mb-3 product-item" key={product.id}>
+            <ProductCard className="product-card"
               {...product}
               editProduct={editProduct}
               deleteCategory={deleteCategory}
             />
-          </Col>
+          </div>
           ))}
         </div>
         <Modal show={show} onHide={closeModal} backdrop="static" keyboard={false}>
