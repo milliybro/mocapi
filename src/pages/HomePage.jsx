@@ -4,10 +4,10 @@ import { Alert, Button, Col, Form, InputGroup, Modal, Row } from "react-bootstra
 import { yupResolver } from "@hookform/resolvers/yup";
 
 import CategoryCard from "../components/card/CategoryCard";
-import Loading from "../components/share/Login";
 import categorySchema from "../schema/CategorySchema";
 import request from "../server";
 import useFetchPagination from "../hook/useFetch";
+import Loading from "../components/share/Login";
 
 const HomePage = () => {
   const [search, setSearch] = useState("");
