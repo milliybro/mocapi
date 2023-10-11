@@ -118,7 +118,7 @@ const ProductPage = () => {
         <InputGroup className="mb-4">
           <Form.Control
             onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search for products"
+            placeholder="Searching product"
           />
           
           <InputGroup.Text id="basic-addon2">
@@ -131,8 +131,8 @@ const ProductPage = () => {
               <option value="desc">10-1</option>
             </Form.Select>
           </InputGroup.Text>
-          <Button variant="outline-secondary" onClick={showModal}>
-          Add category
+          <Button variant="btn btn-success" onClick={showModal}>
+          Add product
         </Button>
         </InputGroup>
         <p className="alert alert-warning">

@@ -1,0 +1,18 @@
+.card{
+   background-color: rgba(250, 235, 215, 0.5) !important;
+}
+.see, .edit, .delete{
+   color: aliceblue !important;
+   border: none !important;
+   transform: skew(350deg);
+   transition: 5s;
+   &:hover{
+      transform: translateY(-10px)
+   }
+}
+.edit{
+   background-color: rgb(52, 45, 183) !important;
+}
+.see{
+   background-color: rgb(250, 232, 30) !important;
+}

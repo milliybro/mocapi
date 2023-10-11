@@ -86,14 +86,14 @@ const HomePage = () => {
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Searching category"
         />
-        <Button variant="outline-secondary" onClick={showModal}>
+        <Button variant="btn btn-success" onClick={showModal}>
           Add category
         </Button>
       </InputGroup>
       <Alert variant="alert alert-warning" >
           Total category: {total}
         </Alert>
-      <Row xs={1} sm={2} md={3} lg={4}>
+      <Row xs={1} sm={2} md={3} >
         {loading ? (
           <Loading />
         ) : (
