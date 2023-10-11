@@ -1,5 +1,8 @@
+
+import "./Login.scss"
+
 const Loading = () => {
-   return <div>Loading</div>;
+   return <span className="loader">Loading...</span>;
  };
  
  export default Loading;
