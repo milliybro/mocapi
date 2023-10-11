@@ -1,4 +1,8 @@
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png"
+
+import "./Header.scss"
+
 const Header = () => {
   return (
     <header className="container">
@@ -7,24 +11,24 @@ const Header = () => {
             <img height={60} src={logo} alt="" />
          </div>
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">
-            Active
-          </a>
+          <NavLink to={""}  className="nav-link" aria-current="page" href="#">
+            Home
+          </NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
-            Link
-          </a>
+          <NavLink className="nav-link" href="#">
+            Product
+          </NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
-            Link
-          </a>
+          <NavLink className="nav-link" href="#">
+            Favourite
+          </NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link disabled" aria-disabled="true">
-            Disabled
-          </a>
+          <NavLink className="nav-link" aria-disabled="true">
+            Cart
+          </NavLink>
         </li>
       </ul>
     </header>
